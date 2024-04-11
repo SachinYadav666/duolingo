@@ -15,8 +15,10 @@ export const getUserProgress=cache(async ()=>{
 
         },
     });
+
+    return data;
     
-})
+});
 export const getCourses = cache(async ()=>{
     const data =await db.query.courses.findMany();
     return data;
